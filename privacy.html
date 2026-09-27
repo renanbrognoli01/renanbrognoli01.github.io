@@ -4,31 +4,29 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Política de Privacidade — Calmia APP</title>
+  <meta name="description" content="Política de Privacidade — Calmia APP — versão 2026-09-27"/>
   <style>
     :root { --primary: #5B8DB8; --dark: #2C3E50; --gray: #7F8C8D; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--dark); background: #F4F8FC; }
-    nav {
-      background: #fff;
-      border-bottom: 1px solid #E8EFF5;
-      padding: 0 24px;
-      height: 56px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    nav { background: #fff; border-bottom: 1px solid #E8EFF5; padding: 0 24px; height: 56px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
     nav a { color: var(--primary); text-decoration: none; font-weight: 600; font-size: 14px; }
     nav span { color: var(--gray); font-size: 14px; }
     .wrap { max-width: 760px; margin: 40px auto; padding: 0 24px 80px; }
     h1 { font-size: 28px; font-weight: 900; color: var(--dark); margin-bottom: 6px; }
-    .updated { font-size: 13px; color: var(--gray); margin-bottom: 40px; }
+    .updated { font-size: 13px; color: var(--gray); margin-bottom: 32px; }
     h2 { font-size: 17px; font-weight: 800; color: var(--dark); margin: 32px 0 10px; border-left: 4px solid var(--primary); padding-left: 12px; }
     p { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 12px; }
     ul { margin: 8px 0 12px 20px; }
     li { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 4px; }
-    .contact-box { background: #fff; border-radius: 12px; padding: 24px; margin-top: 40px; border: 1px solid #E8EFF5; }
-    .contact-box a { color: var(--primary); font-weight: 600; }
+    a { color: var(--primary); }
+    .contact-box { background: #fff; border-radius: 12px; padding: 20px 24px; margin-top: 12px; border: 1px solid #E8EFF5; }
+    .contact-box a { font-weight: 600; }
     .lang-note { background: #EBF3FB; border-radius: 10px; padding: 16px 20px; margin-bottom: 32px; font-size: 14px; color: var(--primary); }
+    .alert { background: #FDF1F1; border: 1px solid #F2C9C9; border-radius: 12px; padding: 16px 20px; margin: 8px 0 16px; }
+    .alert p { color: #7A2E2E; margin: 0; }
+    hr.sep { margin: 60px 0; border: none; border-top: 1px solid #E8EFF5; }
+    footer { text-align: center; font-size: 13px; color: var(--gray); padding: 0 24px 40px; }
   </style>
 </head>
 <body>
@@ -36,135 +34,176 @@
   <a href="index.html">🌿 Calmia</a>
   <span>/</span>
   <span>Política de Privacidade</span>
+  <span style="margin-left:auto"><a href="privacy.html">Privacidade</a> · <a href="terms.html">Termos</a></span>
 </nav>
-
 <div class="wrap">
   <h1>Política de Privacidade</h1>
-  <p class="updated">Última atualização: maio de 2025</p>
+  <p class="updated">Versão 2026-09-27 · Última atualização: 27 de setembro de 2026</p>
+  <div class="lang-note">🇧🇷 Versão em Português · 🇺🇸 <a href="#english">English version below</a><br/>Este é o mesmo texto exibido no aplicativo em Configurações → Política de Privacidade.</div>
 
-  <div class="lang-note">
-    🇧🇷 Versão em Português · 🇺🇸 <a href="#english" style="color:var(--primary)">English version below</a>
-  </div>
+  <h2>1. Quem somos</h2>
+  <p>O Calmia é um aplicativo de apoio à terapia cognitivo-comportamental, para registro de pensamentos, emoções, humor e gratidão, com compartilhamento opcional com o terapeuta.</p>
+  <p>O controlador dos dados pessoais é o desenvolvedor do Calmia, que opera sob a marca Brognoli BI (brognolibi.com). Contato e encarregado (DPO): support@brognolibi.com.</p>
+  <p>O Calmia é destinado a pessoas com 18 anos ou mais. Adolescentes só devem usá-lo com autorização do responsável legal e sob acompanhamento do terapeuta.</p>
 
-  <!-- ── PORTUGUÊS ── -->
-  <h2>1. Introdução</h2>
-  <p>O <strong>Calmia APP</strong> ("nós", "nosso") está comprometido com a proteção dos seus dados pessoais e de saúde. Esta política descreve como coletamos, usamos e protegemos suas informações, em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)</strong>.</p>
-
-  <h2>2. Dados que Coletamos</h2>
+  <h2>2. Quais dados tratamos</h2>
   <ul>
-    <li><strong>Cadastro:</strong> nome, e-mail e senha (para criação de conta)</li>
-    <li><strong>Dados de saúde:</strong> registros de pensamentos disfuncionais inseridos por você</li>
-    <li><strong>Dados de uso:</strong> data e hora dos registros, localização (opcional, usada apenas para preencher o campo "local" no formulário)</li>
-    <li><strong>Foto de perfil:</strong> armazenada apenas no seu dispositivo</li>
+    <li><strong>Conta:</strong> nome, e-mail, tipo de perfil (paciente ou terapeuta) e, se usar login social, o identificador fornecido pelo Google ou pela Apple.</li>
+    <li><strong>Dados de saúde (sensíveis):</strong> registros de pensamentos (situação, emoções e intensidades, pensamentos automáticos, evidências, pensamento alternativo), diário de humor (incluindo horas de sono e atividade física), diário de gratidão e notas para a sessão.</li>
+    <li><strong>Localização:</strong> somente se você autorizar, para preencher o campo &quot;local&quot; de um registro. Não rastreamos sua localização em segundo plano.</li>
+    <li><strong>Foto de perfil:</strong> opcional, fica apenas no seu aparelho.</li>
+    <li><strong>Assinatura:</strong> status da assinatura e identificadores de compra. Não recebemos dados do seu cartão — o pagamento é processado pela Apple ou pelo Google.</li>
+    <li><strong>Notificações:</strong> token de notificação do aparelho (terapeutas), para avisar sobre novos registros compartilhados.</li>
+    <li><strong>Aceites:</strong> data, hora, versão dos documentos aceitos, plataforma e versão do app, como prova do seu consentimento.</li>
   </ul>
 
-  <h2>3. Como Usamos seus Dados</h2>
+  <h2>3. Para que usamos</h2>
+  <p>Não usamos seus dados para publicidade, não criamos perfis de marketing e não vendemos dados.</p>
   <ul>
-    <li>Fornecer e manter as funcionalidades do aplicativo</li>
-    <li>Permitir o compartilhamento de registros com seu terapeuta (somente com sua autorização explícita)</li>
-    <li>Sincronizar seus dados entre dispositivos (opcional, somente com conta ativa)</li>
-    <li>Enviar notificações relacionadas ao uso do app (somente com sua permissão)</li>
+    <li>Fazer o app funcionar: guardar e exibir seus registros e gerar relatórios e PDFs quando você pedir.</li>
+    <li>Backup e sincronização entre aparelhos (quando o backup estiver ativo).</li>
+    <li>Compartilhar com o terapeuta vinculado apenas as categorias que você ativar, e avisá-lo de novos registros.</li>
+    <li>Validar e manter sua assinatura.</li>
+    <li>Proteger sua conta (autenticação, bloqueio por biometria, prevenção de abuso) e cumprir obrigações legais.</li>
   </ul>
 
-  <h2>4. Compartilhamento de Dados</h2>
-  <p>Seus dados <strong>nunca são vendidos</strong>. O compartilhamento ocorre somente:</p>
+  <h2>4. Bases legais (LGPD)</h2>
   <ul>
-    <li>Com seu terapeuta vinculado, quando você compartilha um registro explicitamente</li>
-    <li>Com serviços de infraestrutura (Supabase) para armazenamento seguro em nuvem</li>
-    <li>Quando exigido por lei ou ordem judicial</li>
+    <li><strong>Dados de saúde:</strong> consentimento específico e destacado (art. 11, I), que você dá na tela de aceite e pode revogar a qualquer momento.</li>
+    <li><strong>Dados de conta e assinatura:</strong> execução do contrato de uso do app (art. 7º, V).</li>
+    <li><strong>Registros de acesso e aceites:</strong> cumprimento de obrigação legal (art. 7º, II; Marco Civil da Internet, art. 15) e exercício regular de direitos (art. 7º, VI).</li>
   </ul>
 
-  <h2>5. Segurança</h2>
-  <p>Adotamos medidas técnicas e organizacionais para proteger seus dados:</p>
+  <h2>5. Com quem compartilhamos</h2>
+  <p>Só com prestadores necessários para o app funcionar (operadores), sob contrato e apenas para essas finalidades:</p>
   <ul>
-    <li>Autenticação segura com senhas criptografadas</li>
-    <li>Opção de bloqueio biométrico (digital ou Face ID)</li>
-    <li>Transmissão de dados via HTTPS/TLS</li>
-    <li>Armazenamento local com SQLite para uso offline</li>
-    <li>Timeout de sessão configurável</li>
+    <li><strong>Supabase (banco de dados e login) — Brasil (São Paulo):</strong> conta, dados de saúde com backup ativo, vínculos e aceites.</li>
+    <li><strong>RevenueCat — EUA:</strong> identificador da conta e histórico da assinatura.</li>
+    <li><strong>Apple e Google — EUA:</strong> pagamento da assinatura e, se você escolher, login social.</li>
+    <li><strong>Expo (notificações e atualizações do app) — EUA:</strong> token de notificação e o texto do aviso (&quot;Nome compartilhou um novo registro&quot;), sem conteúdo clínico.</li>
+    <li><strong>Seu terapeuta:</strong> seu nome e e-mail (para identificar você na lista de pacientes) e somente as categorias de registros que você ativar, enquanto estiverem vinculados.</li>
   </ul>
 
-  <h2>6. Seus Direitos (LGPD)</h2>
-  <p>Você tem direito a:</p>
+  <h2>6. Transferência internacional</h2>
+  <p>Os dados de saúde ficam armazenados no Brasil. RevenueCat, Apple, Google e Expo podem tratar dados de conta, assinatura e notificação nos EUA, com cláusulas contratuais e medidas de segurança compatíveis com a LGPD (art. 33).</p>
+
+  <h2>7. Como protegemos</h2>
   <ul>
-    <li>Acessar os dados que temos sobre você</li>
-    <li>Corrigir dados incorretos ou desatualizados</li>
-    <li>Solicitar a exclusão dos seus dados</li>
-    <li>Revogar o consentimento a qualquer momento</li>
-    <li>Solicitar a portabilidade dos seus dados</li>
-  </ul>
-  <p>Para exercer qualquer um desses direitos, entre em contato: <strong>support@brognolibi.com</strong></p>
-
-  <h2>7. Exclusão de Conta</h2>
-  <p>Você pode excluir sua conta diretamente no aplicativo (Configurações → Excluir conta). Todos os seus dados serão removidos permanentemente dos nossos servidores em até 30 dias.</p>
-
-  <h2>8. Crianças</h2>
-  <p>O Calmia não é destinado a menores de 13 anos. Não coletamos intencionalmente dados de crianças. Se identificarmos o uso por menores, excluiremos a conta imediatamente.</p>
-
-  <h2>9. Alterações nesta Política</h2>
-  <p>Podemos atualizar esta política periodicamente. Notificaremos sobre mudanças significativas pelo app ou por e-mail.</p>
-
-  <h2>10. Contato</h2>
-  <div class="contact-box">
-    <p>Dúvidas sobre privacidade ou sobre seus dados? Entre em contato:</p>
-    <p style="margin-top:10px"><strong>E-mail:</strong> <a href="mailto:support@brognolibi.com">support@brognolibi.com</a></p>
-  </div>
-
-  <!-- ── ENGLISH ── -->
-  <hr style="margin:60px 0;border:none;border-top:1px solid #E8EFF5" id="english"/>
-
-  <h1 style="margin-bottom:6px">Privacy Policy</h1>
-  <p class="updated">Last updated: May 2025</p>
-
-  <h2>1. Introduction</h2>
-  <p><strong>Calmia APP</strong> ("we", "our") is committed to protecting your personal and health data. This policy describes how we collect, use, and protect your information, in compliance with Brazilian data protection law (LGPD) and applicable international privacy standards.</p>
-
-  <h2>2. Data We Collect</h2>
-  <ul>
-    <li><strong>Account data:</strong> name, email, and password</li>
-    <li><strong>Health data:</strong> dysfunctional thought records entered by you</li>
-    <li><strong>Usage data:</strong> timestamps of records, location (optional, used only to fill the "location" field)</li>
-    <li><strong>Profile photo:</strong> stored locally on your device only</li>
+    <li>No aparelho: banco de dados criptografado (SQLCipher, AES-256) com chave no Keychain/Keystore do sistema.</li>
+    <li>Na nuvem: criptografia em repouso e em trânsito (TLS) e controle de acesso por linha (RLS) — cada pessoa só acessa os próprios dados.</li>
+    <li>Premium e vínculos validados no servidor; nenhuma credencial administrativa fica no app.</li>
+    <li>Bloqueio opcional por biometria/PIN e encerramento automático de sessão.</li>
   </ul>
 
-  <h2>3. How We Use Your Data</h2>
+  <h2>8. Por quanto tempo guardamos</h2>
+  <p>Enquanto sua conta existir. Ao excluir a conta, apagamos imediatamente seus dados dos nossos servidores e do aparelho em uso. Cópias de segurança técnicas do provedor, quando existentes, são sobrescritas automaticamente em até 30 dias.</p>
+  <p>Se você desligar o backup, os novos registros ficam só no aparelho; para apagar também a cópia já enviada à nuvem, exclua a conta ou fale conosco.</p>
+
+  <h2>9. Seus direitos (LGPD, art. 18)</h2>
   <ul>
-    <li>Provide and maintain app functionality</li>
-    <li>Enable record sharing with your therapist (only with your explicit consent)</li>
-    <li>Sync data across devices (optional, only with active account)</li>
-    <li>Send app-related notifications (only with your permission)</li>
+    <li><strong>Acesso e portabilidade:</strong> em Configurações → Exportar meus dados você baixa na hora uma cópia completa, em formato aberto (JSON).</li>
+    <li><strong>Correção:</strong> edite seus registros e seu nome diretamente no app.</li>
+    <li><strong>Exclusão e revogação do consentimento:</strong> em Configurações → Excluir conta.</li>
+    <li><strong>Compartilhamento com o terapeuta:</strong> ative, desative ou desvincule em Configurações a qualquer momento.</li>
+    <li><strong>Informação:</strong> sobre com quem compartilhamos (seção 5) e sobre as consequências de não consentir (sem o consentimento para dados de saúde o app não pode funcionar).</li>
+    <li><strong>Reclamação:</strong> você pode reclamar à ANPD (Autoridade Nacional de Proteção de Dados).</li>
   </ul>
 
-  <h2>4. Data Sharing</h2>
-  <p>Your data is <strong>never sold</strong>. Sharing occurs only:</p>
+  <h2>10. Cookies, rastreamento e publicidade</h2>
+  <p>O Calmia não usa cookies, pixels, ferramentas de analytics de terceiros, anúncios nem rastreamento comportamental.</p>
+
+  <h2>11. Alterações nesta política</h2>
+  <p>Cada versão tem data. Se houver mudança relevante, o app mostra a nova versão e pede seu aceite antes de você continuar a usá-lo.</p>
+
+  <h2>12. Contato e encarregado (DPO)</h2>
+  <p>Para exercer seus direitos, tirar dúvidas ou fazer solicitações sobre seus dados:</p>
+  <div class="contact-box"><p><a href="mailto:support@brognolibi.com">support@brognolibi.com</a></p></div>
+  <p>Respondemos em até 15 dias, conforme a LGPD.</p>
+
+  <hr class="sep"/>
+
+  <h1 id="english">Privacy Policy</h1>
+  <p class="updated">Version 2026-09-27 · Last updated: September 27, 2026</p>
+
+  <h2>1. Who we are</h2>
+  <p>Calmia is an app that supports cognitive behavioral therapy: thought records, emotions, mood and gratitude, with optional sharing with your therapist.</p>
+  <p>The data controller is the developer of Calmia, operating under the Brognoli BI brand (brognolibi.com). Contact and Data Protection Officer: support@brognolibi.com.</p>
+  <p>Calmia is intended for people aged 18 or over. Teenagers should only use it with the authorization of a legal guardian and under their therapist’s guidance.</p>
+
+  <h2>2. Data we process</h2>
   <ul>
-    <li>With your linked therapist, when you explicitly share a record</li>
-    <li>With infrastructure services (Supabase) for secure cloud storage</li>
-    <li>When required by law or court order</li>
+    <li><strong>Account:</strong> name, email, profile type (patient or therapist) and, with social login, the identifier provided by Google or Apple.</li>
+    <li><strong>Health data (sensitive):</strong> thought records (situation, emotions and intensities, automatic thoughts, evidence, alternative thought), mood diary (including sleep hours and physical activity), gratitude diary and session notes.</li>
+    <li><strong>Location:</strong> only if you allow it, to fill in the &quot;location&quot; field of a record. We do not track your location in the background.</li>
+    <li><strong>Profile photo:</strong> optional, stored only on your device.</li>
+    <li><strong>Subscription:</strong> subscription status and purchase identifiers. We never receive your card details — payment is processed by Apple or Google.</li>
+    <li><strong>Notifications:</strong> device notification token (therapists), to alert about newly shared records.</li>
+    <li><strong>Consents:</strong> date, time, document version, platform and app version, as proof of your consent.</li>
   </ul>
 
-  <h2>5. Security</h2>
+  <h2>3. Why we use it</h2>
+  <p>We do not use your data for advertising, build marketing profiles or sell data.</p>
   <ul>
-    <li>Secure authentication with encrypted passwords</li>
-    <li>Biometric lock option (fingerprint or Face ID)</li>
-    <li>Data transmission via HTTPS/TLS</li>
-    <li>Local SQLite storage for offline use</li>
-    <li>Configurable session timeout</li>
+    <li>To run the app: store and display your records and generate reports and PDFs when you ask.</li>
+    <li>Backup and sync between devices (when backup is on).</li>
+    <li>Share with your linked therapist only the categories you enable, and notify them of new records.</li>
+    <li>Validate and maintain your subscription.</li>
+    <li>Protect your account (authentication, biometric lock, abuse prevention) and meet legal obligations.</li>
   </ul>
 
-  <h2>6. Your Rights</h2>
-  <p>You have the right to access, correct, delete, and port your data. To exercise any of these rights, contact us at <strong>support@brognolibi.com</strong></p>
+  <h2>4. Legal bases (LGPD)</h2>
+  <ul>
+    <li><strong>Health data:</strong> specific and express consent (art. 11, I), given on the consent screen and revocable at any time.</li>
+    <li><strong>Account and subscription data:</strong> performance of the app’s terms of use (art. 7, V).</li>
+    <li><strong>Access logs and consents:</strong> legal obligation (art. 7, II; Brazilian Internet Act, art. 15) and regular exercise of rights (art. 7, VI).</li>
+  </ul>
 
-  <h2>7. Account Deletion</h2>
-  <p>You can delete your account directly in the app (Settings → Delete account). All your data will be permanently removed from our servers within 30 days.</p>
+  <h2>5. Who we share with</h2>
+  <p>Only service providers needed to run the app (processors), under contract and only for these purposes:</p>
+  <ul>
+    <li><strong>Supabase (database and login) — Brazil (São Paulo):</strong> account, health data when backup is on, links and consents.</li>
+    <li><strong>RevenueCat — USA:</strong> account identifier and subscription history.</li>
+    <li><strong>Apple and Google — USA:</strong> subscription payment and, if you choose, social login.</li>
+    <li><strong>Expo (notifications and app updates) — USA:</strong> notification token and the alert text (&quot;Name shared a new record&quot;), with no clinical content.</li>
+    <li><strong>Your therapist:</strong> your name and email (to identify you in their patient list) and only the record categories you enable, while you are linked.</li>
+  </ul>
 
-  <h2>8. Children</h2>
-  <p>Calmia is not intended for children under 13. We do not knowingly collect data from children.</p>
+  <h2>6. International transfer</h2>
+  <p>Health data is stored in Brazil. RevenueCat, Apple, Google and Expo may process account, subscription and notification data in the USA, under contractual clauses and security measures compatible with the LGPD (art. 33).</p>
 
-  <h2>9. Contact</h2>
-  <div class="contact-box">
-    <p><strong>Email:</strong> <a href="mailto:support@brognolibi.com">support@brognolibi.com</a></p>
-  </div>
+  <h2>7. How we protect it</h2>
+  <ul>
+    <li>On your device: encrypted database (SQLCipher, AES-256) with the key in the system Keychain/Keystore.</li>
+    <li>In the cloud: encryption at rest and in transit (TLS) and row-level security (RLS) — each person can only access their own data.</li>
+    <li>Premium and links validated on the server; no admin credentials in the app.</li>
+    <li>Optional biometric/PIN lock and automatic session timeout.</li>
+  </ul>
+
+  <h2>8. How long we keep it</h2>
+  <p>For as long as your account exists. When you delete your account, we immediately erase your data from our servers and from the device in use. Provider technical backups, when they exist, are automatically overwritten within 30 days.</p>
+  <p>If you turn backup off, new records stay only on the device; to also erase the copy already in the cloud, delete your account or contact us.</p>
+
+  <h2>9. Your rights (LGPD, art. 18)</h2>
+  <ul>
+    <li><strong>Access and portability:</strong> in Settings → Export my data you instantly download a full copy in an open format (JSON).</li>
+    <li><strong>Correction:</strong> edit your records and name directly in the app.</li>
+    <li><strong>Deletion and withdrawal of consent:</strong> in Settings → Delete account.</li>
+    <li><strong>Sharing with your therapist:</strong> turn on, off or unlink in Settings at any time.</li>
+    <li><strong>Information:</strong> about who we share with (section 5) and the consequences of not consenting (without consent for health data the app cannot work).</li>
+    <li><strong>Complaint:</strong> you may file a complaint with the ANPD (Brazilian Data Protection Authority).</li>
+  </ul>
+
+  <h2>10. Cookies, tracking and advertising</h2>
+  <p>Calmia does not use cookies, pixels, third-party analytics, ads or behavioral tracking.</p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>Each version is dated. If there is a relevant change, the app shows the new version and asks for your acceptance before you continue using it.</p>
+
+  <h2>12. Contact and Data Protection Officer</h2>
+  <p>To exercise your rights, ask questions or make requests about your data:</p>
+  <div class="contact-box"><p><a href="mailto:support@brognolibi.com">support@brognolibi.com</a></p></div>
+  <p>We reply within 15 days, as required by the LGPD.</p>
 </div>
+<footer>© 2026 Calmia · <a href="mailto:support@brognolibi.com">support@brognolibi.com</a></footer>
 </body>
 </html>
